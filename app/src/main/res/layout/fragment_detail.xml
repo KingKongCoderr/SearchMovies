@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jaihind.gobblessamerica.searchmovies.DetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailTitle_tv"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/director_tv"
+                android:layout_below="@id/detailTitle_tv"
+                android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/detailImage_iv"
+        android:layout_below="@id/director_tv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailYear_tv"
+        android:layout_below="@id/detailImage_iv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/runtime_tv"
+                android:layout_below="@id/detailImage_iv"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genre_tv"
+                android:layout_below="@id/detailYear_tv"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/metascore_tv"
+            android:layout_below="@id/genre_tv"
+            android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imdb_tv"
+                android:layout_below="@id/genre_tv"
+                android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailPlot_tv"
+        android:textSize="20sp"
+        android:layout_below="@id/imdb_tv"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
